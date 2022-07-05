@@ -1,0 +1,18 @@
+{
+  "name": "git-plantio",
+  "version": "1.0.0",
+  "description": "jest test",
+  "main": "examples.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "jest",
+    "test"
+  ],
+  "author": "Juan Acevedo",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^28.1.2"
+  }
+}
