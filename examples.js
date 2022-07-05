@@ -22,7 +22,3 @@ const Persona = {
     nombre: "Juan",
     edad: 12
 };
-
-let a = 23;
-
-numCaracteres(Persona);
