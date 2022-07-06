@@ -63,14 +63,57 @@ const inverse = (cadena = null) =>{
   }
 }
 
-// 6) Programa una función para contar el número de veces que se repite una palabra en un texto largo,
-//  pe. miFuncion("hola mundo adios mundo", "mundo") devolverá 2.
+//24) Programa una función que dado un arreglo de números devuelva un objeto con dos arreglos, 
+// el primero tendrá los numeros ordenados en forma ascendente y el segundo de forma descendiente,
+//  pe. miFuncion([7,5,7,8,6]) devolverá { asc: [5,6,7,7,8], desc: [8,7,7,6,5] }.
 
-// 7) Programa una función que valide si una palabra o frase dada,
-//  es un palíndromo (que se lee igual en un sentido que en otro), pe. mifuncion("Salas") devolverá true.
+const ascDesc = (arr) =>{
 
-// 8) Programa una función que elimine cierto patrón de caracteres de un texto dado,
-//  pe. miFuncion("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz") devolverá  "1, 2, 3, 4 y 5.
+  const orden  = {
+    asc: arr.map(el => el).sort(),
+    des: arr.map(el => el).sort().reverse()
+  }
+  
+  return orden;
+
+}
+// 25) Programa una función que dado un arreglo de elementos, elimine los duplicados,
+//  pe. miFuncion(["x", 10, "x", 2, "10", 10, true, true]) devolverá ["x", 10, 2, "10", true].
+
+//my way
+
+
+const duplicado = (data)=>{
+
+  let uniqueArr = [];
+  data.forEach((item)=>{
+    //pushes only unique element
+      if(!uniqueArr.includes(item)){
+      uniqueArr.push(item);
+    }
+  })
+  return uniqueArr;
+}
+
+
+
+// 26) Programa una función que dado un arreglo de números obtenga el promedio,
+//  pe. promedio([9,8,7,6,5,4,3,2,1,0]) devolverá 4.5.
+
+
+const promedio = (data) =>{
+  
+  let sumatoria = 0;
+  let promedio;
+
+  data.forEach(element => {
+      sumatoria += element; 
+  });
+
+  promedio = sumatoria/data.length;
+
+  return promedio;
+}
 
 //Exportación de Módulos
 
