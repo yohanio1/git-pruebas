@@ -1,7 +1,7 @@
 const excercise = require('../examples');
 //const recortar = require('../examples');
 
-
+//-------------------------------------------------------------------------------------------------------------------
 describe('excercise #1',() =>{
 
   test('cadena Hola length =  4', () => {
@@ -18,7 +18,8 @@ describe('excercise #1',() =>{
     expect(excercise.numCadena(objectTest)).toBeUndefined();
   });
 })
-
+  
+//-------------------------------------------------------------------------------------------------------------------
 describe('excercise #2',() =>{
 
   test('slice = 4 Hola Mundo => result Hola ', () => {
@@ -37,4 +38,27 @@ describe('excercise #2',() =>{
     };
     expect(excercise.recortar(objectTest,3)).toBeUndefined();
   });
+})
+
+//-------------------------------------------------------------------------------------------------------------------
+describe('excercise #3',() =>{
+
+  test('split = " " Hola como estas  => result array["Hola","como","estas"] ', () => {
+    expect(excercise.sepCaracter("Hola como estas"," ")).toEqual(expect.arrayContaining(["Hola","como","estas"]));
+  });
+
+  test('no split caracter passed  any cadena  => result by default split with " " ', () => {
+    expect(excercise.sepCaracter("any cadena")).toEqual(expect.arrayContaining(["any","cadena"]));
+  });  
+  
+  test('no passed string should return undefined', () => {
+    expect(excercise.sepCaracter(12)).toBeUndefined();
+  });  
+  
+  test('no passed arguments to the function should return null', () => {
+    expect(excercise.sepCaracter()).toBeNull();
+  });  
+
+
+
 })

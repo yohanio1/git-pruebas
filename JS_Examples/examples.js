@@ -19,8 +19,31 @@ const recortar = (cadena,numCaracteres) =>{
   return cadena.slice(0,numCaracteres);
   }
 }
+/*
+3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter,
+ pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].*/
+
+ const sepCaracter = (cadena = " ",separador = " ") =>{
+
+  if (cadena == " " && separador ==  " "){
+    return null;
+  }else if(typeof(cadena) === 'string'){
+    return cadena.split(separador)
+  }else{
+    return undefined
+  }
+  
+    
+}
+
+ /*
+4) Programa una función que repita un texto X veces, 
+pe. miFuncion('Hola Mundo',3) devolverá Hola Mundo Hola Mundo Hola Mundo.*/
+
+
+
 
 
 //Exportación de Módulos
 
-module.exports = {numCadena, recortar};
+module.exports = {numCadena, recortar , sepCaracter};
