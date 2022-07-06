@@ -60,4 +60,25 @@ describe('excercise #3',() =>{
   });  
 
 })
+
+//-------------------------------------------------------------------------------------------------------------------
+describe('excercise #5',() =>{
+
+  test('passed Hola mundo should return odnum aloH ', () => {
+    expect(excercise.inverse("Hola mundo")).toBe("odnum aloH");
+  });
+
+  test('passed recononcer should return reconocer ', () => {
+    expect(excercise.inverse("reconocer")).toBe("reconocer");
+  });
+
+  test('default should return null', () => {
+    expect(excercise.inverse()).toBeNull();
+  });
+
+  test('passed type of no string should return undefined', () => {
+    expect(excercise.inverse(12)).toBeUndefined();
+  });
+  
+})
 //-------------------------------------------------------------------------------------------------------------------
