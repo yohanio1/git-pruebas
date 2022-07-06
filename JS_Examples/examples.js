@@ -40,10 +40,16 @@ const recortar = (cadena,numCaracteres) =>{
 4) Programa una función que repita un texto X veces, 
 pe. miFuncion('Hola Mundo',3) devolverá Hola Mundo Hola Mundo Hola Mundo.*/
 
+const repet = (cadena,n) =>{
 
+  for (let i = 0 ; i < n; i++){
+      console.info(`${cadena}, ${i}`);
+  }
+
+}
 
 
 
 //Exportación de Módulos
 
-module.exports = {numCadena, recortar , sepCaracter};
+module.exports = {numCadena, recortar , sepCaracter, repet};
