@@ -5,7 +5,7 @@ const excercise = require('../examples');
 describe('excercise #1',() =>{
 
   test('cadena Hola length =  4', () => {
-    expect(excercise.numCadena("Hola")).toBe(4);
+    expect(excercise.numCadena("Hola")).toBe(5);
   });
   test('number is undefined',() =>{
     expect(excercise.numCadena(12)).toBeUndefined();
