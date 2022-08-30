@@ -13,7 +13,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env: 
-      BRANCH: '"branches":"95"'
+      BRANCH: "95"
       FUNCTIONS: '"functions":"85"'
       LINES: '"lines":"85"'
       STATEMENTS: '"statements":"85"'
@@ -29,4 +29,4 @@ jobs:
     - name: Unit test
       run: npm test
     - name: Coverage Report 
-      run: yarn jest --coverage --coverageThreshold='{"global":{"branches":"95","functions":"85","lines":"85","statements":"85"}}'
+      run: yarn jest --coverage --coverageThreshold='{"global":{"branches":$BRANCH,"functions":"85","lines":"85","statements":"85"}}'
