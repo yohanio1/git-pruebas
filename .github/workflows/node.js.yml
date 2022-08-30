@@ -29,4 +29,4 @@ jobs:
     - name: Unit test
       run: npm test
     - name: Coverage Report 
-      run: yarn jest --coverage --coverageThreshold='{"global":{"branches":$BRANCH,"functions":"85","lines":"85","statements":"85"}}'
+      run: yarn jest --coverage --coverageThreshold='{"global":{"branches":"30","functions":"30","lines":"30","statements":"30"}}'
