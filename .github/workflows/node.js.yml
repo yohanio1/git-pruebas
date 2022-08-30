@@ -13,7 +13,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env: 
-      BRANCH: "95"
+      BRANCH: 95
       FUNCTIONS: '"functions":"85"'
       LINES: '"lines":"85"'
       STATEMENTS: '"statements":"85"'
